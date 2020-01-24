@@ -1,8 +1,6 @@
 # coding=UTF-8
-import io
 import sys
 import random
-import base64
 import pygame
 
 # define colors
@@ -422,7 +420,7 @@ class Bullet(pygame.sprite.Sprite):
             elif self.skill == 4:
                 if probable(game_data['skill'][self.skill]['value'] / 100) and game_data['wave'] % 10 != 0:
                     self.target.point = 0
-                    make_tip_text('爆頭', 48, 200, DARKGREY,
+                    make_tip_text('??????', 48, 200, DARKGREY,
                                   self.target.rect.center)
             bullets.remove(self)
 
